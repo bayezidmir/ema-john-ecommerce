@@ -5,16 +5,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../Cart/Cart";
 import { addToDatabase, getStoredCart } from "../../utilities/database";
+import useProducts from "../../hooks/useProducts";
 
 const Shop = () => {
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
+  const [products, setProducts] = useProducts();
+
   const [cart, setCart] = useState([]);
 
-  useEffect(() => {
+  /* useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, []);
+  }, []); */
 
   // Second
   // Keeping data in the cart using Local Storage

@@ -5,6 +5,8 @@ import Header from "./Components/Header/Header";
 import Shop from "./Components/Shop/Shop";
 import Orders from "./Components/Orders/Orders";
 import Inventory from "./Components/Inventory/Inventory";
+import About from "./Components/About/About";
+import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/inventory" element={<Inventory />} />
-        {/* <Route path="*" element={} */}
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
