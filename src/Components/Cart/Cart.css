@@ -27,10 +27,19 @@
   background: #ff9900;
   border: none;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .trash-icon,
 .arrow-icon {
   margin-left: 10px;
+  color: white;
+}
+
+.review-order-link {
+  text-decoration: none;
   color: white;
 }
