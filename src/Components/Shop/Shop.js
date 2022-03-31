@@ -6,22 +6,18 @@ import { faTrash, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../Cart/Cart";
 import { addToDatabase, getStoredCart } from "../../utilities/database";
 import useProducts from "../../hooks/useProducts";
+import useCart from "../../hooks/useCart";
 
 const Shop = () => {
   // const [products, setProducts] = useState([]);
   const [products, setProducts] = useProducts();
 
-  const [cart, setCart] = useState([]);
-
-  /* useEffect(() => {
-    fetch("products.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []); */
+  const [cart, setCart] = useCart(products);
+  // const [cart, setCart] = useState([]);
 
   // Second
   // Keeping data in the cart using Local Storage
-  useEffect(() => {
+  /*  useEffect(() => {
     const storedCart = getStoredCart();
     const orderSummary = []; //This is for order summary on reload
     for (const id in storedCart) {
@@ -33,7 +29,7 @@ const Shop = () => {
       }
     }
     setCart(orderSummary);
-  }, [products]);
+  }, [products]); */
 
   // First
   const addToCartHandler = (selectedProduct) => {
