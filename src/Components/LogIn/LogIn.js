@@ -9,17 +9,17 @@ const LogIn = () => {
       <form className="">
         <div className="input-group">
           <label htmlFor="email">Email</label>
-          <input type="email" name="" id="" />
+          <input type="email" name="email" id="" required />
         </div>
         <div className="input-group" style={{ marginTop: "10px" }}>
           <label htmlFor="password">Password</label>
-          <input type="password" name="" id="" />
+          <input type="password" name="password" id="" required />
         </div>
         <div className="submit-btn-container">
           <input type="submit" value="LogIn" className="btn-submit" />
         </div>
       </form>
-      <p className="singup">
+      <p className="signup">
         New to Ema-John{" "}
         <Link className="signup-link" to="/signup">
           Create New Account

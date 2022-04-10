@@ -42,10 +42,12 @@
 
 .input-group input {
   width: 415px;
-  height: 55px;
+  height: 45px;
   border: 1px solid #95a0a7;
   box-sizing: border-box;
   border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .btn-submit {
@@ -68,7 +70,7 @@
   text-align: center;
 }
 
-.singup {
+.signup {
   text-align: center;
 }
 
