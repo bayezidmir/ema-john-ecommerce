@@ -1,0 +1,77 @@
+.login-container {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  box-shadow: -8px 8px 1px #ffe0b3;
+  background: #ffffff;
+  border: 1px solid #95a0a7;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 128px;
+}
+
+.login-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  letter-spacing: 0.0025em;
+  color: #2a414f;
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.input-group {
+  width: 415px;
+  height: 84px;
+  margin: 0 auto;
+}
+
+.input-group label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.0015em;
+  display: block;
+  color: #2a414f;
+  margin: 0 5px 5px;
+}
+
+.input-group input {
+  width: 415px;
+  height: 55px;
+  border: 1px solid #95a0a7;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  margin-top: 44px;
+  width: 415px;
+  height: 55px;
+  background-color: #ff99004d;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+  cursor: pointer;
+  color: #0e161a;
+}
+
+.submit-btn-container {
+  text-align: center;
+}
+
+.singup {
+  text-align: center;
+}
+
+.signup-link {
+  text-decoration: none;
+}
