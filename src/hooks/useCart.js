@@ -10,7 +10,7 @@ const useCart = (products) => {
 
     for (const id in storedCart) {
       const loadingProductDetail = products.find(
-        (product) => product.id === id
+        (product) => product._id === id
       );
 
       if (loadingProductDetail) {
