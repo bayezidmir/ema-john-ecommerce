@@ -10,11 +10,10 @@ import useCart from "../../hooks/useCart";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
-  // const [products, setProducts] = useProducts();
-  const [cart, setCart] = useCart(products);
+  const [cart, setCart] = useCart([]);
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
-  const [size, setSize] = useState(10);
+  const [size, setSize] = useState(5);
 
   useEffect(() => {
     const url = `http://localhost:5000/product?page=${page}&size=${size}`;
@@ -44,7 +43,8 @@ const Shop = () => {
     } else {
       const rest = cart.filter(
         (product) => product._id !== selectedProduct._id
-      ); //newly added product/s
+      );
+      //newly added product/s
       exist.quantity = exist.quantity + 1;
       newCart = [...rest, exist];
     }
